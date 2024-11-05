@@ -21,6 +21,10 @@ namespace Topic_1___MonoGame_Assignment
             // TODO: Add your initialization logic here
 
             base.Initialize();
+
+            _graphics.PreferredBackBufferWidth = 800;
+            _graphics.PreferredBackBufferHeight = 600;
+            _graphics.ApplyChanges();
         }
 
         protected override void LoadContent()

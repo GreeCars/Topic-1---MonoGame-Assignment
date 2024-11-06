@@ -9,6 +9,9 @@ namespace Topic_1___MonoGame_Assignment
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        Texture2D carTexture;
+        Texture2D planeTexture;
+
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -32,6 +35,8 @@ namespace Topic_1___MonoGame_Assignment
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+            carTexture = Content.Load<Texture2D>("car");
+            planeTexture = Content.Load<Texture2D>("plane (1)");
         }
 
         protected override void Update(GameTime gameTime)
@@ -49,6 +54,13 @@ namespace Topic_1___MonoGame_Assignment
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+
+            _spriteBatch.Begin();
+
+            _spriteBatch.Draw(carTexture, new Vector2(10, 10), Color.White);
+            _spriteBatch.Draw(planeTexture, new Vector2(30, 30), Color.White);
+
+            _spriteBatch.End();
 
             base.Draw(gameTime);
         }

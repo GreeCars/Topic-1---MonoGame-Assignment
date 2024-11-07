@@ -58,7 +58,7 @@ namespace Topic_1___MonoGame_Assignment
             _spriteBatch.Begin();
 
             _spriteBatch.Draw(carTexture, new Vector2(10, 10), Color.White);
-            _spriteBatch.Draw(planeTexture, new Vector2(30, 30), Color.White);
+            _spriteBatch.Draw(planeTexture, new Vector2(30, 250), Color.White);
 
             _spriteBatch.End();
 

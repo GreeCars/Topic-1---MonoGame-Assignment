@@ -11,6 +11,7 @@ namespace Topic_1___MonoGame_Assignment
 
         Texture2D carTexture;
         Texture2D planeTexture;
+        Texture2D boatTexture;
 
         public Game1()
         {
@@ -37,6 +38,7 @@ namespace Topic_1___MonoGame_Assignment
             // TODO: use this.Content to load your game content here
             carTexture = Content.Load<Texture2D>("car");
             planeTexture = Content.Load<Texture2D>("plane (1)");
+            boatTexture = Content.Load<Texture2D>("red-boat");
         }
 
         protected override void Update(GameTime gameTime)
@@ -59,6 +61,7 @@ namespace Topic_1___MonoGame_Assignment
 
             _spriteBatch.Draw(carTexture, new Vector2(10, 10), Color.White);
             _spriteBatch.Draw(planeTexture, new Vector2(30, 250), Color.White);
+            _spriteBatch.Draw(boatTexture, new Vector2(60, 300), Color.White);
 
             _spriteBatch.End();
 

@@ -12,6 +12,7 @@ namespace Topic_1___MonoGame_Assignment
         Texture2D carTexture;
         Texture2D planeTexture;
         Texture2D boatTexture;
+        Texture2D submarineTexture;
 
         public Game1()
         {
@@ -39,6 +40,7 @@ namespace Topic_1___MonoGame_Assignment
             carTexture = Content.Load<Texture2D>("car");
             planeTexture = Content.Load<Texture2D>("plane (1)");
             boatTexture = Content.Load<Texture2D>("red-boat");
+            submarineTexture = Content.Load<Texture2D>("submarine");
         }
 
         protected override void Update(GameTime gameTime)
@@ -59,9 +61,10 @@ namespace Topic_1___MonoGame_Assignment
 
             _spriteBatch.Begin();
 
-            _spriteBatch.Draw(carTexture, new Vector2(10, 10), Color.White);
+            _spriteBatch.Draw(carTexture, new Vector2(2, 5), Color.White);
             _spriteBatch.Draw(planeTexture, new Vector2(30, 250), Color.White);
-            _spriteBatch.Draw(boatTexture, new Vector2(60, 300), Color.White);
+            _spriteBatch.Draw(boatTexture, new Vector2(4, 300), Color.White);
+            _spriteBatch.Draw(submarineTexture, new Vector2(200, 108), Color.White);
 
             _spriteBatch.End();
 
